@@ -1,6 +1,7 @@
 import * as dotenv from "dotenv";
 import express from "express";
 import bodyparser from "body-parser";
+import cors from "cors";
 //swagger
 // import swaggerUi from "swagger-ui-express";
 // import swaggerJsDoc from "swagger-jsdoc";
@@ -8,6 +9,7 @@ import bodyparser from "body-parser";
 import routes from "./routes";
 
 const app = express();
+app.use(cors());
 dotenv.config();
 //middlewares
 app.use(express.json());
