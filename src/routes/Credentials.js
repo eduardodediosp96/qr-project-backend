@@ -7,7 +7,7 @@ import {
   deleteCredential,
   getCredential,
   login,
-} from "../controllers/Credential";
+} from "../controllers/Credentials";
 
 const router = Router();
 /**

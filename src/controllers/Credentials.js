@@ -1,4 +1,4 @@
-import Credential from "../models/Credential";
+import Credential from "../models/Credentials";
 
 export const getCredentials = async (req, res) => {
   Credential.find({}, (err, docs) => {

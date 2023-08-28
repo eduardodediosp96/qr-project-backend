@@ -1,5 +1,5 @@
 import express from "express";
-import credentialRoutes from "./Credential";
+import credentialRoutes from "./Credentials";
 import eventSchedule from "./EventSchedule";
 import event from "./Event";
 import guest from "./Guest";
