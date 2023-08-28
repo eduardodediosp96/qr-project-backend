@@ -32,4 +32,4 @@ var guestsSchema = new Schema({
   },
 });
 
-export default mongoose.model("guests", guestsSchema);
+export default mongoose.model("Guest", guestsSchema);

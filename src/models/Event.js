@@ -19,7 +19,7 @@ const eventSchema = new Schema({
     {
       type: Schema.Types.ObjectId,
       required: true,
-      ref: "guests",
+      ref: "Guest",
     },
   ],
   concluded: {
@@ -28,4 +28,4 @@ const eventSchema = new Schema({
   },
 });
 
-export default mongoose.model("event", eventSchema);
+export default mongoose.model("Event", eventSchema);

@@ -9,6 +9,11 @@ const eventScheduleSchema = new mongoose.Schema({
     required: true,
     ref: "event",
   },
+  guests: {
+    type: [{ type: Schema.Types.ObjectId, ref: "Guest" }],
+    default: [],
+  },
+
 });
 
 const EventSchedule = mongoose.model("EventSchedule", eventScheduleSchema);

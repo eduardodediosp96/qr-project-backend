@@ -19,4 +19,4 @@ const credentialsSchema = new Schema({
 });
 
 credentialsSchema.plugin(uniqueValidator);
-export default mongoose.model("credentials", credentialsSchema);
+export default mongoose.model("Credentials", credentialsSchema);

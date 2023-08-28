@@ -23,10 +23,16 @@ const router = Router();
  *       time:
  *         type: string
  *         description: time
+ *       guests:
+ *         type: array
+ *         items:
+ *           type: string
+ *         description: List of guests
  *     example:
  *       date: 2023-08-15T10:00:00Z
  *       time: 10:00 AM
- *   EventScheduleRequiered:
+ *       guests: []
+ *   EventScheduleRequired:
  *     allOf:
  *      - $ref: "#/components/schemas/EventSchedule"
  *      - required:
@@ -103,15 +109,15 @@ router.route("/:id").get(getEventSchedule);
  *        Application/json:
  *          schema:
  *            type: object
- *            $ref: '#/components/schemas/EventScheduleRequiered'
+ *            $ref: '#/components/schemas/EventScheduleRequired'
  *        Application/xml:
  *          schema:
  *            type: object
- *            $ref: '#/components/schemas/EventScheduleRequiered'
+ *            $ref: '#/components/schemas/EventScheduleRequired'
  *        Application/x-www-form-urlencoded:
  *          schema:
  *            type: object
- *            $ref: '#/components/schemas/EventScheduleRequiered'
+ *            $ref: '#/components/schemas/EventScheduleRequired'
  *    responses:
  *      200:
  *        description: Nuevo EventSchedule fue creado

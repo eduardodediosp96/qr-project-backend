@@ -57,6 +57,7 @@ export const editEventSchedule = async (req, res) => {
   await EventSchedule.findOneAndUpdate(filter, {
     date: update.date,
     time: update.time,
+    guests: update.guests,
   })
     .then((eventSchedule) => EventSchedule.findById(eventSchedule._id))
     .then((newEventSchedule) => res.send(newEventSchedule))
